@@ -1,0 +1,1228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* noto-serif-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/noto-serif-v23-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-serif-v23-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/noto-serif-v23-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-serif-v23-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-shrink {
+    background: rgba(0, 0, 0, 0.396);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.592);
+}
+
+header ul li {
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+
+    &:hover {
+        border: 2px solid yellow;
+        background-color: black;
+        gap: 10px;
+
+    }
+}
+
+header .boxes {
+    gap: 10px;
+}
+
+header .boxes .box img {
+    width: 20px;
+    height: 20px;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('../Images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-family: 'Noto Serif';
+    font-size: 64px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.hero h1 {
+    font-family: 'Noto Serif';
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.hero .myBtn {
+    transition: 0.5s ease;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Noto Serif';
+    background: transparent;
+    border: 2px solid #E4391C;
+    transition: 0.6s ease;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: black;
+        border: 3px solid rgb(255, 38, 0);
+        border-radius: 10px;
+    }
+}
+
+.section1 .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1 .boxes .box1 {
+    background-image: url('../Images/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 .boxes .box2 {
+    background-image: url('../Images/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 .boxes .box3 {
+    background-image: url('../Images/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 .boxes .box {
+    text-align: center;
+    display: inline-block;
+    padding: 50px 70px;
+
+}
+
+.section1 .boxes .box h3 {
+    font-family: "Noto Serif";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 16px;
+
+}
+
+.section1 .boxes .box p {
+    font-family: "Noto Serif";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-bottom: 26px;
+}
+
+.section1 .boxes .myBtn {
+    transition: 0.5s ease;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Noto Serif';
+    background: transparent;
+    border: 2px solid #E4391C;
+    transition: 0.6s ease;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: black;
+        border: 3px solid rgb(255, 38, 0);
+        border-radius: 10px;
+    }
+}
+
+
+.section2 .boxes {
+    align-items: center;
+    padding: 70px 0;
+}
+
+.section2 .box1 h3 {
+    font-family: 'Noto Serif';
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.section2 .box1 h4 {
+    font-family: 'Noto Serif';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 28px;
+
+}
+
+.section2 .box1 p {
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.section2 .box1 .myBtn {
+    transition: 0.5s ease;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 28px;
+    font-family: 'Noto Serif';
+    background: transparent;
+    border: 2px solid #E4391C;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: red;
+        border: 2px solid #151515;
+        border-radius: 10px;
+    }
+}
+
+.section2 {
+    background-color: #151515;
+
+
+}
+
+.section2 .box1 {
+    max-width: 598px;
+}
+
+.section2 .box2 img {
+    max-width: 530px;
+}
+
+.section3 {
+    background-image: url('../Images/Sec3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section3 h3 {
+    font-family: 'Noto Serif';
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+
+}
+
+.section3 h4 {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+
+}
+
+.section5 {
+    background-color: #151515;
+    color: white;
+
+}
+
+.section5 h2 {
+    font-family: 'Noto Serif';
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.section5 .nav-item .nav-link {
+    font-family: 'Noto Serif';
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+.section5 .nav-item .active {
+    background-color: transparent;
+    color: #CA351C;
+}
+
+.section5 .span {
+    color: #CA351C;
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.section6 {
+    background-image: url('../Images/price-bg\ 1.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section6 h2 {
+    font-family: Noto Serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.section6 ul {
+    justify-content: center;
+}
+
+.section6 p {
+    font-family: Noto Serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+
+}
+
+.section6 .row {
+    padding-bottom: 50px;
+}
+
+.section6 .row .box {
+    background-color: white;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.section6 .box h1 {
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    margin: 0px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #151515;
+
+}
+
+.section6 .box h2 {
+    font-family: 'Noto Sans';
+    font-size: 44px;
+    padding: 0px;
+    font-weight: 600;
+    text-align: center;
+    color: #151515;
+
+}
+
+.section6 .box .spann {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.section6 .box h3 {
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #151515;
+}
+
+.section6 .box p {
+    font-family: 'Noto Serif';
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 35px;
+    color: #151515;
+
+}
+
+.section6 .box .myBtn {
+    transition: 0.5s ease;
+    padding: 8px 16px;
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    background: transparent;
+    border: 3px solid #E4391C;
+    color: red;
+    text-decoration: none;
+
+    &:hover {
+        background-color: black;
+        border: 3px solid #151515;
+        border-radius: 6px;
+    }
+}
+
+.section7 {
+    background: #151515;
+    padding: 5%;
+}
+
+.section7 h2 {
+    font-family: 'Noto Serif';
+    font-size: 30px;
+    font-weight: 800;
+    word-spacing: 4px;
+    color: white;
+
+}
+
+.section7 h4 {
+    color: white;
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.section7 .row {
+    margin-top: 20px;
+}
+
+.section7 h3 {
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    margin-top: 20px;
+}
+
+.section7 p {
+    font-family: 'Noto Serif';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.39);
+    margin-top: 20px;
+}
+
+.section8 {
+    background-image: url('../Images/video-bg\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 68vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.section8 h2 {
+    color: white;
+    font-family: 'Noto Serif';
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.section8 img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.section9 {
+    background-color: #151515;
+}
+
+.section9 h2 {
+    font-family: 'Noto Serif';
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+
+}
+
+.section9 p {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+
+}
+
+.section9 .box11,
+.box21,
+.box4,
+.box1,
+.box2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.section9 .box11 {
+    background-image: url('../Images/qiz_turnik.png');
+    min-height: 400px;
+}
+
+.section9 .box21 {
+    background-image: url('../Images/tosh.png');
+    min-height: 240px;
+}
+
+.section9 .box4 {
+    background-image: url('../Images/blog-3\ 1.png');
+    min-height: 440px;
+}
+
+.section9 .box3 {
+    min-height: 200px;
+    color: white;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f58319, #f12711);
+    background: linear-gradient(to right, #f58319, #f12711);
+}
+
+.section9 .box2 {
+    background-image: url('../Images/blog-2\ 1.png');
+    min-height: 240px;
+}
+
+.section9 .box1 {
+    background-image: url('../Images/blog-4\ 1.png');
+    min-height: 400px;
+}
+
+.section9 .box11 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 290px;
+}
+
+.section9 .box11 h3 {
+    font-family: 'Noto Serif';
+    font-size: 21px;
+    font-weight: 800;
+    margin-left: 30px;
+
+}
+
+.section9 .box21 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 120px;
+}
+
+.section9 .box21 h3 {
+    font-family: 'Noto Serif';
+    font-size: 21px;
+    font-weight: 800;
+    margin-left: 30px;
+
+}
+
+.section9 .box3 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+
+.section9 .box3 h3 {
+    font-family: 'Noto Serif';
+    font-size: 17px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.section9 .box4 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 320px;
+}
+
+.section9 .box4 h3 {
+    font-family: 'Noto Serif';
+    font-size: 21px;
+    font-weight: 800;
+    margin-left: 30px;
+
+}
+
+
+.section9 .box2 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 160px;
+
+}
+
+.section9 .box2 h3 {
+    font-family: 'Noto Serif';
+    font-size: 17px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.section9 .box1 h5 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 290px;
+}
+
+.section9 .box1 h3 {
+    font-family: 'Noto Serif';
+    font-size: 21px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+
+.section10 {
+    color: white;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f58319, #f12711);
+    background: linear-gradient(to right, #f58319, #f12711);
+
+}
+
+.container {
+    width: 80%;
+}
+
+.section10 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.section10 .left h2 {
+    font-family: 'Noto Serif';
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.section10 .left h4 {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.section10 .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section10 .right a {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    text-align: center;
+
+
+    &:hover {
+        background-color: #151515;
+        border: 2px solid rgb(47, 42, 38);
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    background-color: #151515;
+}
+
+.footer .box1 img {
+    width: 170px;
+
+}
+
+.footer .box1 h6 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.244);
+    padding-top: 30px;
+
+}
+
+.footer .box1 h4 {
+    font-family: 'Noto Serif';
+    font-size: 13px;
+    font-weight: 900;
+    color: white;
+    padding-top: 40px;
+}
+
+.footer .box1 .boxes img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.footer .box2 h3 {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.footer .box2 h4 {
+    font-family: 'Noto Serif';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.footer .box2 .quti {
+    display: flex;
+    align-items: center;
+}
+
+.footer .box2 .quti img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.footer .box2 .quti h6 {
+    font-family: 'Noto Serif';
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.244);
+}
+
+.footer .box3 h3 {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 15px;
+
+}
+
+.footer .box3 h5 {
+    font-family: 'Noto Serif';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer .box4 h3 {
+    font-family: 'Noto Serif';
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 15px;
+
+}
+
+.footer .box4 .qutilar {
+    display: flex;
+    align-items: center;
+}
+
+.footer .box4 .qutilar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.footer .box4 .quti h5 {
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.footer .box4 .quti h6 {
+    color: rgba(255, 255, 255, 0.244);
+    font-family: 'Noto Serif';
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media (max-width:1250px) {
+
+    .section1 .boxes .box {
+        padding: 50px 50px;
+    }
+
+    .section1 .boxes .box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .section1 .boxes .box p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .section1 .boxes .box .myBtn {
+        font-size: 15px;
+    }
+
+    .section3 h3 {
+        font-size: 35px;
+    }
+
+    .section3 h4 {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    .section4 .col-md-3{
+        padding: 50px 70px;
+    }
+}
+
+@media (max-width:1070px) {
+
+    .section2 .box2 img {
+        max-width: 450px;
+    }
+
+    .section5 .nav-item .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .section1 .boxes .box {
+        padding: 50px 26px;
+    }
+
+    .section1 .boxes .box .myBtn {
+        font-size: 12px;
+    }
+
+    .nav-logo img {
+        width: 200px;
+    }
+
+
+}
+
+@media(max-width:992px) {
+    header {
+        background: rgba(0, 0, 0, 0.396);
+        backdrop-filter: blur(10px);
+    }
+
+    .section1 .boxes .box {
+        padding: 25px;
+    }
+
+    .section1 .boxes .box h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .section1 .boxes .box p {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .section2 .box1 h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .section2 .box1 .h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .section2 .box1 .p {
+        font-size: 12px;
+
+
+    }
+
+    .section6 .row .box h2 {
+        font-size: 36px;
+        padding: 0px;
+    }
+
+    .section6 .row .box p {
+        font-size: 12px;
+
+    }
+
+    .section6 .row .box .myBtn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .section10 .left h2 {
+        font-size: 35px;
+    }
+
+    .section5 .tab-pane {
+        overflow: auto;
+    }
+
+    .section5 .tab-pane .table {
+        width: 1000px;
+    }
+
+    .section9 h5 {
+        font-size: 11px;
+    }
+
+    .section9 h3 {
+        font-size: 16px;
+    }
+
+    .footer .box1 img {
+        width: 130px;
+    }
+
+    .footer .box1 .boxes .box img {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    .footer .box2 h4 {
+        font-size: 12px;
+    }
+
+    .footer .box2,
+    .box3,
+    .box4 h3 {
+        font-size: 18px;
+    }
+
+    .footer .box2 .quti img {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .footer .box3 h5 {
+        font-size: 14px;
+    }
+
+    .footer .box4 .qutilar img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer .box4 .quti h5 {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:896px) {
+
+    .section1 .boxes .box {
+        padding: 20px;
+    }
+
+    .section2 .box1 h3 {
+        font-size: 20px;
+    }
+
+    .section2 .box1 h4 {
+        font-size: 16px;
+    }
+
+    .section2 .box1 p {
+        font-size: 10px;
+    }
+
+    .section2 .box1 .myBtn {
+        font-size: 12px;
+    }
+
+    .section2 .box2 img {
+        max-width: 370px;
+    }
+
+    .section6 h2 {
+        font-size: 30px;
+    }
+
+    .section6 p {
+        font-size: 16px;
+    }
+
+    .section6 .row .box h2 {
+        font-size: 24px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .section6 .row .box p {
+        font-size: 10px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .section1 .boxes {
+        flex-direction: column;
+    }
+
+    .section1 .boxes .box {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .section1 .boxes .box h3 {
+        font-size: 20px;
+    }
+
+    .section1 .boxes .box p {
+        font-size: 14px;
+    }
+
+    .section1 .boxes .box .myBtn {
+        font-size: 12px;
+        padding: 9px 16px;
+    }
+
+    .section2 .box1 {
+        text-align: center;
+    }
+
+    .section6 .row .box {
+        margin-bottom: 10px;
+    }
+
+    .section6 .row .box h1 {
+        font-size: 28px;
+    }
+
+    .section6 .row .box h3 {
+        font-size: 20px;
+    }
+
+    .section6 .row .box p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .section8 h2 {
+        font-size: 30px;
+    }
+
+    .section8 img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .box3,
+    .box4 {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .section2 .box2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:750px) {
+
+
+
+    /* .section1 .boxes .box p {
+        max-width: ;
+    } */
+
+    .hero h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: large;
+        text-align: center;
+    }
+
+    .section8 h2 {
+        font-size: 36px;
+    }
+
+    .section10 .boxes {
+        text-align: center;
+    }
+}
+
+@media(max-width:615px) {
+
+
+
+    .section3 h3 {
+        font-size: 35px;
+    }
+
+    .section3 h4 {
+        font-size: 20px;
+    }
+
+    .section5 .nav-item .nav-link {
+        font-size: 16px;
+        offset: 0;
+    }
+
+    .section7 {
+        text-align: center;
+    }
+
+    .section7 h2 {
+        font-size: larger;
+    }
+
+    .section7 h4 {
+        font-size: smaller;
+    }
+
+    .section8 h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .section8 img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .nav-logo img {
+        width: 150px;
+    }
+
+    .section2 .box2 img {
+        width: 100%;
+    }
+
+    .section3 h3 {
+        font-size: 24px;
+    }
+
+    .section3 h4 {
+        font-size: 14px;
+    }
+
+    .section8 h2 {
+        font-size: large;
+    }
+
+    .footer .box2 {
+        padding-top: 15px;
+    }
+}
